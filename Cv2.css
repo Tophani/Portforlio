@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: antiquewhite;
+}
+#header{
+    height: 10vw;
+    width:auto;
+    background-color: burlywood;
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    /* position: fixed; */
+
+    
+    
+}
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration:underline;
+}
+#name{
+    font-size: 30px;
+    margin-left: 10vw;
+    padding-left: 10vw;
+}
+#frot{
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bold;
+    align-content: center;
+}
+omo{
+    margin: 5vw;
+}
+h3{
+    font-size: 20px;
+    margin-left: 10px;
+}
+p{
+    margin-left: 20px;
+}
+li{
+    margin-left: 10px;
+}
+hr{
+    border: 2px dotted peru;
+}
