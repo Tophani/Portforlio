@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+  </head>
+  <body>
+    <!-- <div id="home"> -->
+      <p><%= msg %></p>
+      <form action="/" method="post" enctype="multipart/form-data">
+        <label for="picture">Image</label>
+        <!-- <input type="text" name="picture"/> -->
+        <input type="file" name="image" accept="file/*">
+    
+
+      <!-- <div id="home"> -->
+            <label for="fname">First name:</label>
+            <input type="text"  id="fname" name="fname">
+            <!-- <textarea name="text" rows="6" cols="2"></textarea><br> -->
+          
+        <!-- <div id="home"> -->
+             <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+        </div>
+      
+      <!-- <div id="phone"> -->
+            <label for="Phone">Phone no:</label>
+            <input type="tel" id="tel" name="tel"><br>
+          </div>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="title">Location:</label>
+            <input type="text" id="Location" name="loc" ><br>
+      
+
+
+            <label for="title">Gender:</label>
+            <input type="radio" value="Male" id="radio_5" name="Gender" />
+            <label for="radio_5" class="radio"><span>Male</span></label>
+         
+            <input type="radio" value="Female" id="radio_6" name="Gender" /> 
+            <label for="radio_6" class="radio"><span>Female</span></label>
+            
+            <input type="radio" value="Alien" id="radio_7" name="Gender" /> 
+            <label for="radio_7" class="radio"><span>Alien</span></label>
+
+            <input type="radio"  value= "Others" id="radio_8" name="Gender" /> 
+            <label for="radio_8" class="radio"><span>Others</span></label>
+          
+      
+
+
+            
+            <label for="title">Education:</label>
+            <textarea name="text" rows="4" cols="34"></textarea><br>
+            <!-- <input type="text" id="text" name="text"><br> -->
+
+
+            <label for="title">Skills:</label>
+            <!-- <input type="text" id="text" name="text"><br> -->
+            <textarea name="message" rows="4" cols="34"></textarea><br>
+
+            
+            <label for="title">Hobbies:</label>
+            <!-- <input type="text" id="text" name="text"><br> -->
+            <textarea name="hobby" rows="1" cols="18"></textarea><br>
+
+            
+            <!-- <label for="title">Courses:</label>
+            <!-- <input type="text" id="text" name="text"><br> -->
+            <!-- <textarea name="message" rows="4" cols="34"></textarea><br> --> 
+
+            
+            <label for="title">Experience:</label>
+            <input type="radio" value="1-3 years" id="radio_1" name="status" required/>
+              <label for="radio_1" class="radio"><span>1-3 years</span></label>
+
+              <input type="radio" value="4-6" id="radio_2" name="status" required/>
+              <label for="radio_2" class="radio"><span>4-6 years</span></label>
+            
+              <input type="radio" value="7-above" id="radio_3" name="status" required/>
+              <label for="radio_3" class="radio"><span>7-above</span></label>
+           
+              <input type="radio" value="no Experience" id="radio_4" name="status" required/>
+              <label for="radio_4" class="radio"><span>No Experience</span></label><br>
+
+              <label for="title">Projects:</label>
+              <!-- <input type="text" id="text" name="text"><br> -->
+              <textarea name="project" rows="4" cols="34"></textarea><br>
+
+              <label for="title">References</label>
+              <textarea name="ref" rows="4" cols="20"></textarea>
+              <br>
+
+              
+              <button type="submit" href="/">Enter</button>
+<!-- 
+             <label for="text">Programming Languages</label><br>
+            <input type="checkbox" id="a" name="a" value="a">
+            <label for="a"> Html5</label><br>
+            <input type="checkbox" id="b name="b" value="b">
+            <label for="b"> Css</label><br>
+            <input type="checkbox" id="c" name="c" value="c">
+            <label for="c"> Js</label><br>
+            <input type="checkbox" id="d" name="d" value="d">
+            <label for="d"> React</label><br>
+            <input type="checkbox" id="e" name="e" value="e">
+            <label for="e"> Python</label><br>
+            <input type="checkbox" id="f" name="f" value="f"> -->
+            <!-- <label for="f"> Django</label><br> -->
+
+
+            <!-- <button type="submit" href="/">Enter</button> -->
+              <!-- <label for="title">Gender:</label>
+              <input type="radio" value="none" id="radio_5" name="Gender" />
+              <label for="radio_5" class="radio"><span>Male</span></label>
+           
+              <input type="radio" value="none" id="radio_6" name="Gender" /> 
+              <label for="radio_6" class="radio"><span>Female</span></label>
+              
+              <input type="radio" value="none" id="radio_7" name="Gender" /> 
+              <label for="radio_7" class="radio"><span>Alien</span></label>
+
+              <input type="radio"  value= "none" id="radio_8" name="Gender" /> 
+              <label for="radio_8" class="radio"><span>Others</span></label><br> -->
+
+
+      </form>
+    
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  .signup-container
+  .left-container
+    %h1 
+      %i.fas.fa-paw
+      PUPASSURE
+    .puppy
+      %img{ :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-542207-jpeg.png"}
+  .right-container
+    %header
+      %h1 Fill the form!
+      .set
+        .pets-name
+          %label{ :for => "pets-name"} Name
+          %input#pets-name{ :type => "text", :placeholder => "Pet's name" }
+        .pets-photo
+          %button#pets-upload{}
+            %i.fas.fa-camera-retro
+          %label{ :for => "pets-upload"} Upload a photo
+      .set
+        .pets-breed
+          %label{ :for => "pets-breed"} Breed
+          %input#pets-breed{ :type => "text", :placeholder => "Pet's breed" }
+        .pets-birthday
+          %label{ :for => "pets-birthday"} Birthday
+          %input#pets-birthday{ :type => "text", :placeholder => "MM/DD/YYYY" }
+      .set
+        .pets-gender
+          %label{:for => "pet-gender-female"} Gender
+          .radio-container
+            %input#pet-gender-female{ :name => "pet-gender", :type => "radio", :value => "female", :checked => "" }
+            %label{ :for => "pet-gender-female"} Female
+            %input#pet-gender-male{ :name => "pet-gender", :type => "radio", :value => "male" }
+            %label{ :for => "pet-gender-male"} Male
+        .pets-spayed-neutered
+          %label{:for => "pet-spayed"} Spayed or Neutered
+          .radio-container
+            %input#pet-spayed{ :name => "spayed-neutered", :type => "radio", :value => "spayed", :checked => "" }
+            %label{ :for => "pet-spayed"} Spayed
+            %input#pet-neutered{ :name => "spayed-neutered", :type => "radio", :value => "neutered" }
+            %label{ :for => "pet-neutered"} Neutered
+      .pets-weight
+        %label{:for => "pet-weight-0-25"} Weight
+        .radio-container
+          %input#pet-weight-0-25{ :name => "pet-weight", :type => "radio", :value => "0-25", :checked => "" }
+          %label{ :for => "pet-weight-0-25"} 0-25 lbs
+          %input#pet-weight-25-50{ :name => "pet-weight", :type => "radio", :value => "25-50" }
+          %label{ :for => "pet-weight-25-50"} 25-50 lbs
+          %input#pet-weight-50-100{ :name => "pet-weight", :type => "radio", :value => "50-100" }
+          %label{ :for => "pet-weight-50-100"} 50-100 lbs
+          %input#pet-weight-100-plus{ :name => "pet-weight", :type => "radio", :value => "100+" }
+          %label{ :for => "pet-weight-100-plus"} 100+ lbs
+    %footer
+      .set
+        %button#back Back
+        %button#next Next
+     
+</body>
+</html>
+. -->
